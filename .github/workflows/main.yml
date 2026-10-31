@@ -1,5 +1,7 @@
 name: Release CI
-on: push
+on:
+  workflow_dispatch:
+
 jobs:
 
   x64_build:
@@ -130,3 +132,4 @@ jobs:
       # with:
         # name: winXP_${{ steps.current-time.outputs.formattedTime }}_TrafficMonitor
         # path: Bin/Release/TrafficMonitor.exe
+
